@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bievenue sur le blog de livres{% endblock %}
+
+{% block body %}
+<div class="container-fluide">
+    <h1>Examen Bibiliothèque 2021</h1>
+        <section class='creation_livre'>
+            <h5>Cliquez ici pour créer un livre</h5>
+            <a href='{{path('livres_form')}}' class='btn btn-secondary'>Créer</a>
+        </section>
+        <section class='creation_genre'>
+            <h5>Cliquez ici pour créer un nouveau genre</h5>
+            <a href='{{path('genre_form')}}' class='btn btn-secondary'>Créer</a>
+        </section>
+</div>
+{% endblock %}

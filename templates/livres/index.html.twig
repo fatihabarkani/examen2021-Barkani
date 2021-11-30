@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}La liste des livres{% endblock %}
+
+
+{% block body %}
+
+
+<div class='livre_list'>
+   <h1>Les Livres</h1>
+    
+    {% for livre in livres %}
+    <section class='det_livre'>
+        <a href='{{ path('livres_det', {id: livre.Id}) }}'><h5>{{ livre.titre }}</h5></a>
+    </section>
+    {% endfor %}
+
+    <section class='creation_livre'>
+        <a href='{{path('livres_form')}}' class='btn btn-primary'>Créer un nouveau livre</a>
+    </section>
+</div>
+{% endblock %}
+

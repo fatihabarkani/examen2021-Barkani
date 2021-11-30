@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}La liste des genres{% endblock %}
+
+{% block body %}
+<h1>La liste des genres</h1>
+{% for genre in genres %}
+<a href="{{ path('genre', {id: genre.id}) }}"><h5>{{genre.nom}}</h5></a>
+
+{% endfor %}
+
+<section class='creation_genre'>
+    <a href='{{path('genre_form')}}' class='btn btn-primary'>Créer un nouveau genre</a>
+</section>
+{% endblock %}

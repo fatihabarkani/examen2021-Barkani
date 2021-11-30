@@ -1,0 +1,18 @@
+1/ Lequel des éléments suivants peut être utilisé pour instancier un objet en PHP en supposant que le
+nom de la classe soit « MaClass »?
+
+
+B) $obj = new MaClass();
+
+2/ La clause Extends est utilisée pour____?
+
+
+A) hériter d’une autre classe
+
+3/ Lequel des mots-clés suivants est utilisé pour implémenter une interface? 
+
+A) implements
+
+4/ Quel mot-clé est utilisé pour empêcher l’héritage?
+
+B) final

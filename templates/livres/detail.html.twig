@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Affichage détail livre{% endblock %}
+
+
+{% block body %}
+<section class='affichage'>
+    <h3>Affichage de livre avec son ID: {{livres.id}}</h3>
+    <p>Nom: {{livres.titre}}</p>
+    <p>Contenu: {{livres.resume}}</p>
+    <p>Date de création: {{livres.dateAjout.format('d-m-Y')}} </p>
+    <h5>Votes:</h5>
+    <button id="vote_plus" class="btn btn-outline-dark">+</button>
+    <button id="vote_moins" class="btn btn-outline-dark">-</button>
+</section>
+<section class='suppression'>
+    <h5></h5>
+    <a href={{ path('livre_del',{id:livres.id} )}} class="btn btn-danger">Supprimer</a>
+</section>
+{% endblock %} 
